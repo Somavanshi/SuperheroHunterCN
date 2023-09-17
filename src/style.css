@@ -43,6 +43,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-family: cursive;
+    
 }
 
 .hero-card {
