@@ -8,6 +8,7 @@ Create a superhero hunter app using ONLY vanilla JavaScript, with no libraries o
 Instructions
 Register on the Marvel API website to obtain public and private keys.
 Follow the instructions on how to use the API key here. Use the timestamp as ts and create the hash using the md5 hash of ts, private-key, and public-key.
+
 To generate an md5 hash, install crypto-js:
 Copy code
 npm install crypto-js
@@ -17,12 +18,14 @@ Copy code
 var MD5 = require("crypto-js/md5"); 
 console.log(MD5("text to hash").toString());
 Ensure correct API URL usage to avoid CORS errors.
+
 You are ALLOWED to style the app as you like.
 You are ALLOWED to use Google for research and problem-solving.
 DO NOT copy and paste code from the internet.
 DO NOT cheat with other students. Remember, these tests are for learning. Cheating won’t help.
 Once finished, create a video (up to 5 minutes) explaining how you approached the problem in code and showcasing the final product. Upload the video to YouTube, Google Drive, or similar platforms.
 Host the code on GitHub. This is compulsory, and submissions without hosting will be rejected.
+
 Features
 Home Page
 Fetch and display a list of Superheroes (Characters) on the home page.
