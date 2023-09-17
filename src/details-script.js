@@ -41,7 +41,7 @@ async function renderCard(id) {
             console.log("here");
             const card = document.createElement("div");
             card.classList.add("hero-card");
-            const imgUrl = item.thumbnail.path + "/portrait_xlarge." + item.thumbnail.extension;
+            const imgUrl = item.thumbnail.path.replace(/^http:/, "https:") + "/portrait_xlarge." + item.thumbnail.extension;
             // dynamically adding element to ul list
             card.innerHTML = `   
             <div class="character-details">
