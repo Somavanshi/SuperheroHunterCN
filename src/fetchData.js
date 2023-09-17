@@ -9,7 +9,7 @@ async function fetchData() {
         return;
     }
 
-    const res = await fetch("http://gateway.marvel.com/v1/public/characters?ts=1694920421452&apikey=2078fa5f632e0e973769c2f7589535af&hash=7f69f7a5ac9941282d132772c73a2bcf");
+    const res = await fetch("https://gateway.marvel.com/v1/public/characters?ts=1694920421452&apikey=2078fa5f632e0e973769c2f7589535af&hash=7f69f7a5ac9941282d132772c73a2bcf");
     const data = await res.json();
     list = data.data.results;
     for (const iterator of list) {
