@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: 75px;
+    background-color: #202020;
+    color: white;
+    padding: 0 11px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    background-color: #202020;
+    color: white;
+    padding: 0 11px;
+}
+
+#header-right {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#header-left {
+    color: #ff0000d9
+}
+main {
+    display: flex;
+    padding: 1.5em 1.5em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hero-card {
+    margin: 10px;
+}
+
+#home {
+    cursor: pointer;
+}
+
+a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+.like {
+    color: red;
+}
+
+#favorite {
+    cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+    header {
+        font-size: 80%;
+    }
+
+    #header-right {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
